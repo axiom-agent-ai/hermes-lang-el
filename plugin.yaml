@@ -1,0 +1,6 @@
+name: hermes-lang-el
+version: 1.0.0
+description: Greek (Ελληνικά) language pack for Hermes Desktop
+requires_hermes: ">=0.21.6"
+provides_locales:
+  - el
