@@ -17,7 +17,7 @@ slash:
   battery:
     description: "Εναλλαγή ένδειξης μπαταρίας με χρωματικό κώδικα στη γραμμή κατάστασης"
   bg:
-    description: "Εκτέλεση ενός prompt σε ξεχωριστό background session"
+    description: "Εκτέλεση ενός prompt σε ξεχωριστή συνεδρία στο παρασκήνιο"
   blueprint:
     description: "Ρύθμιση αυτοματισμού από πρότυπο blueprint"
   btw:
@@ -93,7 +93,7 @@ slash:
   model:
     description: "Εναλλαγή μοντέλου (ισχύει για τη συνεδρία· --global για μόνιμη αλλαγή)"
   new:
-    description: "Έναρξη νέας συνεδρίας (νέο ID + ιστορικό)"
+    description: "Έναρξη νέας συνεδρίας (νέο ID + κενό ιστορικό)"
   palette:
     description: "Άνοιγμα της ασαφούς παλέτας εντολών (επίσης Ctrl+P)"
   paste:
@@ -117,13 +117,13 @@ slash:
   prompt:
     description: "Σύνταξη του επόμενου prompt σας στον $EDITOR (markdown) και αποστολή"
   queue:
-    description: "Προσθήκη prompt στην ουρά για τον επόμενο γύρο, ή διαχείριση ουράς"
+    description: "Προσθήκη prompt στην ουρά για τον επόμενο γύρο, ή διαχείριση των prompts στην ουρά (list/edit/rm/move/clear)"
   quit:
     description: "Έξοδος από το CLI (με --delete διαγράφει και το ιστορικό)"
   reasoning:
     description: "Διαχείριση επιπέδου συλλογισμού και εμφάνισης"
   redraw:
-    description: "Αναγκαστική πλήρης ανανέωση UI (αποκαθιστά από terminal drift)"
+    description: "Αναγκαστική πλήρης ανανέωση UI (αποκαθιστά προβλήματα εμφάνισης του terminal)"
   refine:
     description: "Ανασκόπηση αυτής της συνομιλίας τώρα και αποθήκευση μαθημάτων σε μνήμη/skills"
   reload:
@@ -181,7 +181,7 @@ slash:
   topup:
     description: "Προβολή υπολοίπου Nous και διαχείριση χρεώσεων στο portal"
   undo:
-    description: "Αναίρεση N γύρων χρήστη και νέο prompt (προεπιλογή 1)"
+    description: "Αναίρεση N γύρων χρήστη και επαναποστολή του prompt (προεπιλογή 1)"
   update:
     description: "Ενημέρωση του Hermes Agent στην τελευταία έκδοση"
   usage:
