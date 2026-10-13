@@ -1,12 +1,12 @@
 approval:
   noun:
     action: "ενέργεια"
-    code: "κώδικα"
+    code: "κώδικας"
     command: "εντολή"
   summary:
-    default: "Η {noun} δεν εκτελέστηκε."
-    denied: "Απορρίψατε αυτή την {noun} — δεν εκτελέστηκε."
-    timeout: "Καμία απάντηση εντός {window} — η {noun} δεν εκτελέστηκε."
+    default: "Δεν εκτελέστηκε ({noun})."
+    denied: "Απορρίψατε το αίτημα έγκρισης ({noun}) — δεν εκτελέστηκε."
+    timeout: "Καμία απάντηση εντός {window} — δεν εκτελέστηκε ({noun})."
 slash:
   agents:
     description: "Εμφάνιση ενεργών agents και εργασιών σε εκτέλεση"
