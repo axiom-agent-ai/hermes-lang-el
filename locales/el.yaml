@@ -23,13 +23,13 @@ slash:
   btw:
     description: "Κάντε μια δευτερεύουσα ερώτηση για την τρέχουσα συνομιλία χωρίς διακοπή"
   bundles:
-    description: "Λίστα bundles δεξιοτήτων (aliases /<name> για πολλαπλές δεξιότητες)"
+    description: "Λίστα bundles skills (aliases /<name> για πολλαπλές skills)"
   busy:
     description: "Έλεγχος συμπεριφοράς μηνυμάτων ενώ ο Hermes δουλεύει"
   clear:
     description: "Καθαρισμός οθόνης και έναρξη νέας συνεδρίας"
   commands:
-    description: "Περιήγηση σε όλες τις εντολές και δεξιότητες (σελιδοποιημένο)"
+    description: "Περιήγηση σε όλες τις εντολές και skills (σελιδοποιημένο)"
   config:
     description: "Προβολή τρέχουσας διαμόρφωσης"
   copy:
@@ -37,7 +37,7 @@ slash:
   cron:
     description: "Διαχείριση προγραμματισμένων εργασιών"
   curator:
-    description: "Συντήρηση δεξιοτήτων στο παρασκήνιο (status, run, pin, archive, list-archived)"
+    description: "Συντήρηση skills στο παρασκήνιο (status, run, pin, archive, list-archived)"
   debug:
     description: "Αποστολή αναφοράς αποσφαλμάτωσης (πληροφορίες συστήματος + αρχεία καταγραφής) και λήψη συνδέσμων κοινής χρήσης"
   deny:
@@ -47,11 +47,11 @@ slash:
   egress:
     description: "Προβολή κατάστασης Docker egress proxy"
   export:
-    description: "Εξαγωγή προφίλ (διαμόρφωση, δεξιότητες, θέμα) σε αρχείο κοινής χρήσης"
+    description: "Εξαγωγή προφίλ (διαμόρφωση, skills, θέμα) σε αρχείο κοινής χρήσης"
   focus:
     description: "Εναλλαγή προβολής εστίασης — μόνο το prompt σας και η τελική απάντηση"
   footer:
-    description: "Εναλλαγή υποσέλιδου μεταδεδομένων runtime της πύλης στις τελικές απαντήσεις"
+    description: "Εναλλαγή υποσέλιδου μεταδεδομένων runtime του gateway στις τελικές απαντήσεις"
   goal:
     description: "Ορίστε έναν μόνιμο στόχο πάνω στον οποίο δουλεύει ο Hermes σε πολλαπλούς γύρους μέχρι να επιτευχθεί"
   handoff:
@@ -61,7 +61,7 @@ slash:
   heartbeat:
     description: "Ορίστε ένα επαναλαμβανόμενο prompt που επανέρχεται σε αυτή τη συνεδρία όταν είναι αδρανής"
   help:
-    description: "Εμφάνιση διαθέσιμων εντολών (το /help skills εμφανίζει εντολές δεξιοτήτων, το /help <κείμενο> φιλτράρει)"
+    description: "Εμφάνιση διαθέσιμων εντολών (το /help skills εμφανίζει εντολές skills, το /help <κείμενο> φιλτράρει)"
   hermes:
     description: "Μιλήστε με τον Hermes ή εκτελέστε μια υποεντολή"
   history:
@@ -81,7 +81,7 @@ slash:
   kanban:
     description: "Πίνακας συνεργασίας πολλαπλών προφίλ (εργασίες, συνδέσμοι, σχόλια)"
   learn:
-    description: "Μάθετε μια επαναχρησιμοποιήσιμη δεξιότητα από οτιδήποτε περιγράψετε (κατάλογοι, URL, αυτή η συνομιλία, σημειώσεις)"
+    description: "Μάθετε μια επαναχρησιμοποιήσιμη skill από οτιδήποτε περιγράψετε (κατάλογοι, URL, αυτή η συνομιλία, σημειώσεις)"
   login:
     description: "Σύνδεση με λογαριασμό Nous (διατηρεί τους connectors σας)"
   loop:
@@ -91,7 +91,7 @@ slash:
   moa:
     description: "Εκτέλεση ενός prompt μέσω του προεπιλεγμένου preset Mixture of Agents, με επαναφορά του μοντέλου σας"
   model:
-    description: "Εναλλαγή runtime codex app-server για μοντέλα OpenAI/Codex"
+    description: "Εναλλαγή μοντέλου (ισχύει για τη συνεδρία· --global για μόνιμη αλλαγή)"
   new:
     description: "Έναρξη νέας συνεδρίας (νέο ID + ιστορικό)"
   palette:
@@ -105,11 +105,11 @@ slash:
   pet:
     description: "Εναλλαγή ή υιοθεσία κατοικιδίου petdex (/pet, /pet list, /pet <slug>)"
   plan:
-    description: "Εκτέλεση αρχικής ρύθμισης: μάθετε για εσάς και ρυθμίστε τον Hermes γύρω σας"
+    description: "Σύνταξη σχεδίου υλοποίησης σε markdown στο .hermes/plans/ χωρίς να εκτελεστεί τίποτα"
   platform:
-    description: "Παύση, συνέχιση ή λίστα αποτυχημένης πλατφόρμας πύλης"
+    description: "Παύση, συνέχιση ή λίστα αποτυχημένης πλατφόρμας gateway"
   platforms:
-    description: "Προβολή κατάστασης πλατφορμών πύλης/μηνυμάτων"
+    description: "Προβολή κατάστασης πλατφορμών gateway/μηνυμάτων"
   plugins:
     description: "Λίστα εγκατεστημένων plugins και κατάστασής τους"
   profile:
@@ -125,17 +125,17 @@ slash:
   redraw:
     description: "Αναγκαστική πλήρης ανανέωση UI (αποκαθιστά από terminal drift)"
   refine:
-    description: "Ανασκόπηση αυτής της συνομιλίας τώρα και αποθήκευση μαθημάτων σε μνήμη/δεξιότητες"
+    description: "Ανασκόπηση αυτής της συνομιλίας τώρα και αποθήκευση μαθημάτων σε μνήμη/skills"
   reload:
-    description: "Εκ νέου σάρωση ~/.hermes/skills/ για νέες ή αφαιρεμένες δεξιότητες"
+    description: "Επαναφόρτωση των μεταβλητών .env στην τρέχουσα συνεδρία"
   reload_mcp:
     description: "Επαναφόρτωση MCP servers από τη διαμόρφωση"
   restart:
-    description: "Ομαλή επανεκκίνηση της πύλης μετά την εκκένωση ενεργών εκτελέσεων"
+    description: "Ομαλή επανεκκίνηση του gateway μετά την εκκένωση ενεργών εκτελέσεων"
   resume:
     description: "Συνέχιση προηγούμενης ονομασμένης συνεδρίας"
   retry:
-    description: "Επανάληψη του τελευταίου μηνύματος (new αποστολή στον agent)"
+    description: "Επανάληψη του τελευταίου μηνύματος (επαναποστολή στον agent)"
   review:
     description: "Δημιουργία ανεξάρτητου subagent για ανασκόπηση της δουλειάς που συζητήσαμε (PR, κώδικας, docs)"
   rollback:
@@ -147,7 +147,7 @@ slash:
   sethome:
     description: "Ορίστε αυτό το chat ως home channel"
   skills:
-    description: "Αναζήτηση, εγκατάσταση, επιθεώρηση ή διαχείριση δεξιοτήτων"
+    description: "Αναζήτηση, εγκατάσταση, επιθεώρηση ή διαχείριση skills"
   skin:
     description: "Προβολή ή αλλαγή skin/θέματος εμφάνισης"
   snapshot:
@@ -181,7 +181,7 @@ slash:
   topup:
     description: "Προβολή υπολοίπου Nous και διαχείριση χρεώσεων στο portal"
   undo:
-    description: "Αντίγραφα ασφαλείας N γύρων χρήστη και νέο prompt (προεπιλογή 1)"
+    description: "Αναίρεση N γύρων χρήστη και νέο prompt (προεπιλογή 1)"
   update:
     description: "Ενημέρωση του Hermes Agent στην τελευταία έκδοση"
   usage:
