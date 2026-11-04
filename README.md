@@ -36,6 +36,7 @@ UI. The TUI and the remaining ~3,300 core CLI strings are not covered yet.
 ```bash
 hermes plugins install axiom-agent-ai/hermes-lang-el
 hermes plugins enable hermes-lang-el
+hermes config set display.language el
 ```
 
 Then in the Desktop app: **Settings → Appearance → Language → Ελληνικά**.

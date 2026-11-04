@@ -1,6 +1,8 @@
 name: hermes-lang-el
-version: 1.0.0
-description: Greek (Ελληνικά) language pack for Hermes Desktop
+version: 1.1.0
+description: Greek (Ελληνικά) language pack for Hermes Agent — Desktop UI, core CLI strings, and TUI overlay
 requires_hermes: ">=0.21.6"
 provides_locales:
-  - el
+  - id: el
+    endonym: Ελληνικά
+    rtl: false
